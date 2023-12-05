@@ -1,12 +1,25 @@
+/*
+    Algumas informações
+    -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    
+    Fique à vontade para testar as mudanças nas variáveis: *expPorBoss*, *nomeDoHeroi*, *emAventura* e *exp*.
+
+    Deixar a variável *emAventura* em 'true' fará com que o algoritmo entre em um loop para aumentar a váriavel *exp*,
+    e conforme *exp* for aumentando, a variável *nivelDoHeroi* será modificada caso seja necessário e então o loop será interrompido quando *nivelDoHeroi* chegar no nível "Radiante".
+
+    -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+*/
+
 const expPorBoss = 500;
 const nomeNiveis = ['Ferro', 'Bronze', 'Prata', 'Ouro', 'Platina', 'Ascendente', 'Imortal', 'Radiante'];
 const expNiveis = [1000, 2000, 5000, 7000, 8000, 9000, 10000];
 
 let nomeDoHeroi = 'KledsonZG';
 let nivelDoHeroi = '';
-let emAventura = true;
+let emAventura = false;
 let exp = 5000;
 
+//Loop para definir *nivelDoHeroi* com base no valor inicial da variável *exp*.
 for(let i = 0; i < expNiveis.length; i++)
 {
     if(exp <= expNiveis[i] )
