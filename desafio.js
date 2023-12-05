@@ -27,6 +27,8 @@ for(let i = 0; i < expNiveis.length; i++)
         nivelDoHeroi = nomeNiveis[i];
         break;
     }
+    else if(i == expNiveis.length - 1)
+        nivelDoHeroi = nomeNiveis[i + 1];
 }
 
 if(emAventura)
